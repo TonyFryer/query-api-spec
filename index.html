@@ -591,7 +591,7 @@
                   <span class="type-pill">header</span>
                   <span class="required-pill">required</span>
                 </div>
-                <p>Preferred pattern: <code>Authorization: ApiKey &lt;key&gt;</code></p>
+                <p>Preferred pattern: <code>Authorization: gf-api-key &lt;key&gt;</code></p>
               </div>
               <div class="property">
                 <div class="property-header">
@@ -618,7 +618,7 @@
             </div>
             <pre id="auth-code">curl https://integration.greenfiling.com/api/v1/filings/search \
   -X POST \
-  -H "Authorization: ApiKey sk_test_123456" \
+  -H "Authorization: gf-api-key sk_test_123456" \
   -H "Content-Type: application/json" \
   -d '{
     "data": {
@@ -1352,7 +1352,7 @@
               <button class="copy-btn" data-copy-target="doc-view-req-code">Copy</button>
             </div>
             <pre id="doc-view-req-code">GET /api/v1/documents/doc_12345/content HTTP/1.1
-Authorization: ApiKey sk_test_123456</pre>
+Authorization: gf-api-key sk_test_123456</pre>
 
             <div class="code-header">
               <span class="code-title">Example response (Headers)</span>
